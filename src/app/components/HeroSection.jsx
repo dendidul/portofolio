@@ -22,13 +22,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Dendi",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "Backend Developer",
                 1000,
-                "UI/UX Designer",
+                "",
                 1000,
               ]}
               wrapper="span"
@@ -37,8 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          As a Lead Developer and former Project Manager with background more than 7 years as Software engineer especially for microsoft technology, hungry for challenges, and new experiences, love to give positive impact in the workplace, hard worker, objective person, and tech enthusiast .
           </p>
           <div>
             <Link
@@ -65,11 +64,11 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/hero-image-dendi.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </motion.div>
