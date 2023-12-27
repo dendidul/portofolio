@@ -9,12 +9,16 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>.Net Core , .Net MVC</li>
+        <li>Backend : C# ,Golang, Nest Js, VB.Net, ASP.Net</li>       
+        <li>Frontend : React JS, NextJs </li>
+        <li>Database : Postgree Sql , SQL Server, Oracle ,MySql</li>
+        <li>NoSQL : Redis, Mongodb</li>
+        <li>ETL Tools : SSIS , Pentaho</li>
+        <li>Business Inteligence : Power BI</li>
+        <li>Cloud : Azure, Google Cloud Platform</li>
+        
+     
       </ul>
     ),
   },
@@ -23,8 +27,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Gunadarma University , Magister Management Sistem Infomasi </li>
+        <li>Gunadarma University , Teknik Informatika </li>
       </ul>
     ),
   },
@@ -33,8 +37,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>SAP - Business Process in Project Management</li>
+        <li>Microsoft Power BI Desktop For Business Intelligence</li>
+        <li>Pentaho For ETL & Data Integration Masterclass 2021-PDI 9.0</li>
       </ul>
     ),
   },
@@ -57,12 +62,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          Hi,
+
+I’m .Net Developer , Sql Server Developer, and Web Developer with six years of experience.
+I’m resourceful and organized in my work, besides being creative use good programming techniques. 
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
