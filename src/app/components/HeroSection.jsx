@@ -24,8 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Dendi",
                 1000,
-                "Web Developer",
-                1000,
+               
                 "Full Stack Developer",
                 1000,
                 "Data Engineer",
@@ -47,7 +46,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="/images/CV.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
