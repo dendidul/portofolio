@@ -7,7 +7,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
       },
       output: 'export',
-      distDir:'public',
+     
       images:{
         unoptimized:true
       }
