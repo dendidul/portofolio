@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "Company Profile",
-    description: "Project 3 description",
+    description: "Company Profile at PT. Cakra Radha Mustika",
     image: "./images/projects/Company-Profile.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -35,7 +35,7 @@ const projectsData = [
   {
     id: 4,
     title: "DMQI Kalbe Nutritionals",
-    description: "Project 4 description",
+    description: "",
     image: "./images/projects/DMQI.png",
     tag: ["All", "Mobile","Web"],
     gitUrl: "/",
