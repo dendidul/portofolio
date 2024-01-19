@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Fameo",
-    description: "Project 1 description",
+    description: "Fameo App",
     image: "./images/projects/Fameo.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
