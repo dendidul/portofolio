@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/Fameo.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/images/projects/Fameo.png",
+    previewUrl: "./images/projects/Fameo.png",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     image: "/images/projects/POS.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/images/projects/POS.png",
+    previewUrl: "./images/projects/POS.png",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/projects/Company-Profile.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/images/projects/Company-Profile.png",
+    previewUrl: "./images/projects/Company-Profile.png",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const projectsData = [
     image: "/images/projects/DMQI.png",
     tag: ["All", "Mobile","Web"],
     gitUrl: "/",
-    previewUrl: "/images/projects/DMQI.png",
+    previewUrl: "./images/projects/DMQI.png",
   }
 ];
 
