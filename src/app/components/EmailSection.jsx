@@ -4,39 +4,61 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { Resend } from "resend";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
+ 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const resend = new Resend('re_iKqBodCM_84aGxjJqjyKRHUAUgv8e4Txg');
+    const fromEmail = 'onboarding@resend.dev';
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    // const JSONdata = JSON.stringify(data);
+    // const endpoint = "/api/send";
+
+    console.log(data);
+    resend.emails.send({
+      from: fromEmail,
+      to: ["erdendilesmana92@gmail.com"],
+      subject: data.subject,
+      react: (
+        <>
+          <h1>{data.subject}</h1>
+          <p>Thank you for contacting us!</p>
+          <p>New message submitted from email : {fromEmail}</p>
+          <p>{data.message}</p>
+        </>
+      ),
+    });
 
     // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+    // const options = {
+    //   // The method is POST because we are sending data.
+    //   method: "POST",
+    //   // Tell the server we're sending JSON.
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   // Body of the request is the JSON data we created above.
+    //   body: JSONdata,
+    // };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // const response = await fetch(endpoint, options);
+    // console.log(response);
+    // const resData = await response.json();
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+    // if (response.status === 200) {
+    //   console.log("Message sent.");
+    //   setEmailSubmitted(true);
+    // }
   };
 
   return (
